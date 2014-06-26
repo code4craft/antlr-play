@@ -1,4 +1,5 @@
 // Generated from /Users/yihua/codecraft/antlr-play/src/main/grammar/Calc.g4 by ANTLR 4.x
+package com.dianping.tuangou.transfer.parser;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -79,11 +80,6 @@ public class CalcParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exitExp(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visitExp(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final ExpContext exp() throws RecognitionException {
@@ -143,11 +139,6 @@ public class CalcParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exit逻辑(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visit逻辑(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final 逻辑Context 逻辑() throws RecognitionException {
@@ -200,11 +191,6 @@ public class CalcParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exitAnd(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visitAnd(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final AndContext and() throws RecognitionException {
@@ -245,11 +231,6 @@ public class CalcParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exitOr(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visitOr(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -301,11 +282,6 @@ public class CalcParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exit比较块(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visit比较块(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final 比较块Context 比较块() throws RecognitionException {
@@ -352,11 +328,6 @@ public class CalcParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exit比较块可以无属性的比较块(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visit比较块可以无属性的比较块(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final 比较块可以无属性的比较块Context 比较块可以无属性的比较块() throws RecognitionException {
@@ -402,11 +373,6 @@ public class CalcParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exit条件1(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visit条件1(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final 条件1Context 条件1() throws RecognitionException {
@@ -445,11 +411,6 @@ public class CalcParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exit属性(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visit属性(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -516,11 +477,6 @@ public class CalcParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exit比较(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visit比较(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -599,11 +555,6 @@ public class CalcParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exitGt(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visitGt(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final GtContext gt() throws RecognitionException {
@@ -644,11 +595,6 @@ public class CalcParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exitEq(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visitEq(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -691,11 +637,6 @@ public class CalcParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exitLt(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visitLt(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final LtContext lt() throws RecognitionException {
@@ -737,11 +678,6 @@ public class CalcParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exitNe(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visitNe(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final NeContext ne() throws RecognitionException {
@@ -777,11 +713,6 @@ public class CalcParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exitContain(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visitContain(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final ContainContext contain() throws RecognitionException {
@@ -816,11 +747,6 @@ public class CalcParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exitNcontain(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visitNcontain(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -860,11 +786,6 @@ public class CalcParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CalcListener ) ((CalcListener)listener).exit变量(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CalcVisitor ) return ((CalcVisitor<? extends T>)visitor).visit变量(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
